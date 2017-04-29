@@ -6,7 +6,12 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-	@Input() loadRecipeEmit: any;
 
-  
+feature: string = 'Recipes';
+
+onLoadFeature(page: string){
+
+	this.feature = page;
+
+	}
 }

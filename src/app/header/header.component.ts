@@ -6,10 +6,10 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-	@Output() loadRecipeEmit = new EventEmitter<number>();
-	@Output() loadShoppingListEmit = new EventEmitter<any>();
-loadRecipes(){
-	this.loadRecipeEmit.emit(5);
+@Output() loadPageEmit = new EventEmitter<string>();
+
+onClickMenu(page: string){
+	this.loadPageEmit.emit(page);
 }
   constructor() { }
 

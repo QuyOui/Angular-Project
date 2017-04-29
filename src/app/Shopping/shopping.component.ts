@@ -11,4 +11,8 @@ ingredients: Ingredient[] = [
 new Ingredient('Apples', 5),
 new Ingredient('Tomotoes', 10)
 ];
+
+addIngredient(addedIngredients: Ingredient){
+this.ingredients.push(addedIngredients);
+}
 }
